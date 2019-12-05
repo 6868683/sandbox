@@ -18,8 +18,12 @@ void draw() {
   }
   strokeWeight(1);
   noFill();
-  stroke(1);
+  noStroke();
   quitHover();
+  colorbbluehover();
+  colorblackhover();
+  colorbluehover();
+  colorbrownhover();
   quitButtonDraw();
   Clearsetup();
   colourredsetup();
@@ -36,6 +40,18 @@ void draw() {
   sizesetup();
   erasersetup();
   colorbbluetext();
+  colorblacktext();
+  colorbluetext();
+  colorbrowntext();
+  colorgreentext();
+  colorgreytext();
+  colororangetext();
+  colorpinktext();
+  colorpurpletext();
+  colorredtext();
+  coloryellowtext();
+  cleartext();
+  erasertext();
 }
 
 void mousePressed () {  
