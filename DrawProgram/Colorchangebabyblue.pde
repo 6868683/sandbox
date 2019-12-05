@@ -1,18 +1,22 @@
 String bblue = "Baby Blue";
 PFont bbluefont;
-
+color bblueback;
+color bbluetext;
 void bblue(){
-    bbluefont = createFont ("Harrington", 55);
+    bbluefont = createFont ("Arial", 60 );
 }
 void colourbbluesetup() {
-  fill(#00B0FF);
+  fill(bblueback);
   rect(width*19/20, height*10/20, width*1, height*1/20);
 }
+void colorbbluehover(){
+    if(mouseX >= width*19/20  && mouseX <= width && mouseY >= height*10/20 && mouseY <= height*11/20){ bblueback = #ffffff;}else {bblueback = #00B0FF;}
+   if(mouseX >= width*19/20  && mouseX <= width && mouseY >= height*10/20 && mouseY <= height*11/20){ bbluetext = #00B0FF;}else {bbluetext = #ffffff;}}
 void colorbbluetext(){
-   fill(#000000);
+   fill(bbluetext);
   textAlign(CENTER, CENTER);
   textFont(bbluefont, 15);
-  text(bblue, width*18/20, height*0, width*3/20, height*20/20);
+  text(bblue, width*18/20, height*0, width*3/20, height*21/20);
   noFill();
 }
 
